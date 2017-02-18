@@ -16,6 +16,9 @@
   "bugs": {
     "url": "https://github.com/kobiza/react_tutorial/issues"
   },
+  "babel": {
+    "presets": ["es2015", "react"]
+  },
   "homepage": "https://github.com/kobiza/react_tutorial#readme",
   "dependencies": {
     "babel-core": "^6.23.1",
