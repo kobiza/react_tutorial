@@ -4,8 +4,8 @@
   "description": "",
   "scripts": {
     "test": "test",
-    "dev": "webpack -d --watch",
-    "build": "webpack -p"
+    "build": "webpack -p",
+    "client": "webpack-dev-server -d"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,10 @@
     "url": "https://github.com/kobiza/react_tutorial/issues"
   },
   "babel": {
-    "presets": ["es2015", "react"]
+    "presets": [
+      "es2015",
+      "react"
+    ]
   },
   "homepage": "https://github.com/kobiza/react_tutorial#readme",
   "dependencies": {
@@ -27,6 +30,7 @@
     "babel-preset-react": "^6.23.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "webpack": "^2.2.1"
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.2"
   }
 }

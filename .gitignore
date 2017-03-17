@@ -13,8 +13,8 @@ npm-debug.log
 .vscode
 *.iml
 
-### generated files defined in gruntfile (or inside grunt tasks) ###
-/cssCache
+### webpack bundle ###
+dist
 
 ### react-templates generated file ###
 *.rt.js

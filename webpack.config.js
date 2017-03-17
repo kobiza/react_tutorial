@@ -1,11 +1,17 @@
 var webpack = require('webpack');
 var path = require('path');
 
-var BUILD_DIR = path.resolve(__dirname, 'src/client/public');
+var BUILD_DIR = path.resolve(__dirname, 'dist/client');
 var APP_DIR = path.resolve(__dirname, 'src/client/app');
 
 var config = {
-    entry: APP_DIR + '/index.jsx',
+    devServer: {
+        contentBase: "./src/client"
+    },
+    entry: [
+        'webpack-dev-server/client?http://localhost:8080',
+        APP_DIR + '/index.jsx'
+    ],
     output: {
         path: BUILD_DIR,
         filename: 'bundle.js'
